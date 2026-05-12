@@ -1,0 +1,166 @@
+# ═══════════════════════════════════════════════════════════════
+# PORTFOLIO DEPENDENCIES — Moe Kyaw Aung
+# Bootstrap 5 + Three.js 3D Premium Portfolio
+# All loaded via CDN — NO npm install required
+# ═══════════════════════════════════════════════════════════════
+# File: requirements.txt
+# Last updated: 2026
+# ═══════════════════════════════════════════════════════════════
+
+
+# ───────────────────────────────────────
+# CSS DEPENDENCIES (load in <head>)
+# ───────────────────────────────────────
+
+# [1] Bootstrap CSS — Grid system, utilities, dark theme, navbar
+# Version : 5.3.3
+# CDN     : https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+# Docs    : https://getbootstrap.com/docs/5.3/
+Bootstrap==5.3.3
+
+# [2] Bootstrap Icons — Complete icon font set
+# Version : 1.11.3
+# CDN     : https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css
+# Docs    : https://icons.getbootstrap.com/
+bootstrap-icons==1.11.3
+
+# [3] AOS (Animate On Scroll) — CSS scroll reveal animations
+# Version : 2.3.4
+# CDN CSS : https://unpkg.com/aos@2.3.4/dist/aos.css
+# CDN JS  : https://unpkg.com/aos@2.3.4/dist/aos.js
+# Docs    : https://michalsnik.github.io/aos/
+aos==2.3.4
+
+
+# ───────────────────────────────────────
+# JAVASCRIPT DEPENDENCIES (load before </body>)
+# ───────────────────────────────────────
+
+# [4] Bootstrap JS Bundle — Navbar collapse, Popper.js included
+# Version : 5.3.3
+# CDN     : https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+# Note    : "bundle" version includes Popper.js — no separate import needed
+Bootstrap-JS==5.3.3
+
+# [5] Three.js — WebGL 3D rendering engine
+# Version : r128 (revision 128)
+# CDN     : https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js
+# Docs    : https://threejs.org/docs/
+# Used for:
+#   - IcosahedronGeometry (80 floating particles)
+#   - TorusGeometry (2 wireframe rings)
+#   - MeshStandardMaterial (PBR materials)
+#   - PointLight, AmbientLight (scene lighting)
+#   - WebGLRenderer with alpha transparency
+#   - PerspectiveCamera with mouse parallax
+Three.js==r128
+
+
+# ───────────────────────────────────────
+# WEB FONTS (Google Fonts CDN)
+# ───────────────────────────────────────
+
+# [6] Clash Display — Display / heading font
+# Weights : 400, 500, 600, 700
+# CDN     : https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700
+# Used as : --font-display variable
+# Used in : Navbar brand, section titles, buttons, stat numbers, badges
+Clash-Display-Font==400,500,600,700
+
+# [7] Cabinet Grotesk — Body / paragraph font
+# Weights : 300, 400, 500, 700, 800, 900
+# CDN     : https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@300;400;500;700;800;900
+# Used as : --font-body variable (body default font)
+# Used in : All body text, descriptions, nav links, labels
+Cabinet-Grotesk-Font==300,400,500,700,800,900
+
+# [8] Instrument Serif — Decorative serif font
+# Weights : 400, 400 italic
+# CDN     : https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1
+# Used as : --font-serif variable
+# Used in : Stroke/outline italic decorative text in hero + section titles
+Instrument-Serif-Font==400,400i
+
+
+# ═══════════════════════════════════════════════════════════════
+# FULL CDN SNIPPET — Copy directly into <head> and before </body>
+# ═══════════════════════════════════════════════════════════════
+#
+# ── IN <head> ──────────────────────────────────────────────────
+#
+# <!-- Bootstrap 5.3.3 CSS -->
+# <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+#
+# <!-- Bootstrap Icons 1.11.3 -->
+# <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+#
+# <!-- AOS 2.3.4 CSS -->
+# <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+#
+# <!-- Google Fonts -->
+# <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+#
+# ── BEFORE </body> ─────────────────────────────────────────────
+#
+# <!-- Bootstrap 5.3.3 JS Bundle (includes Popper) -->
+# <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+#
+# <!-- AOS 2.3.4 JS -->
+# <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+#
+# <!-- Three.js r128 -->
+# <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+#
+# ═══════════════════════════════════════════════════════════════
+
+
+# ───────────────────────────────────────
+# OPTIONAL ENHANCEMENTS (not included — future additions)
+# ───────────────────────────────────────
+
+# GSAP 3 — Advanced animation library (alternative to AOS)
+# CDN: https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js
+# gsap==3.12.5
+
+# Swiper.js — Touch slider for project gallery
+# CDN: https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js
+# swiper==11.0.0
+
+# Typed.js — Typewriter effect for hero subtitle
+# CDN: https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js
+# typed.js==2.1.0
+
+# Particles.js — Alternative to Three.js for simpler particles
+# CDN: https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
+# particles.js==2.0.0
+
+# EmailJS — Send contact form emails without backend
+# CDN: https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js
+# emailjs==4.0.0
+
+# Chart.js — Skills radar/bar charts alternative
+# CDN: https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js
+# chart.js==4.4.3
+
+
+# ───────────────────────────────────────
+# DEVELOPMENT TOOLS (local development only)
+# ───────────────────────────────────────
+
+# Python local server (built-in — no install):
+#   python3 -m http.server 8080
+#
+# Node.js serve (one-time):
+#   npx serve .
+#
+# VS Code Extension:
+#   Name: Live Server
+#   ID  : ritwickdey.LiveServer
+#   URL : https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+
+
+# ═══════════════════════════════════════════════════════════════
+# TOTAL DEPENDENCY COUNT: 8 (3 CSS · 2 JS · 3 Fonts)
+# TOTAL ESTIMATED SIZE  : ~900 KB first load / ~85 KB cached
+# BUILD TOOLS REQUIRED  : NONE
+# ═══════════════════════════════════════════════════════════════
